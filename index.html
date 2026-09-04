@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Executive dashboard for Hostinger's observed GitHub Copilot adoption and impact signals."
+    />
+    <title>Hostinger | GitHub Copilot Impact Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar" aria-label="Dashboard context">
+          <a class="brand" href="#overview" aria-label="Hostinger dashboard home">
+            <span class="brand-mark" aria-hidden="true">H</span>
+            <span>HOSTINGER</span>
+          </a>
+          <div class="refreshed">
+            <span class="status-dot" aria-hidden="true"></span>
+            Last refreshed 03 Sep 2026
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">GITHUB COPILOT · EXECUTIVE BRIEF</p>
+            <h1>Copilot impact<br /><span>dashboard</span></h1>
+            <p class="hero-summary">
+              A leadership view of adoption, product health, and observed engineering
+              outcomes—grounded in the latest available cohort data.
+            </p>
+          </div>
+          <aside class="period-card">
+            <div>
+              <span class="period-label">REPORTING PERIOD</span>
+              <strong>07 Aug — 03 Sep 2026</strong>
+            </div>
+            <div class="period-meta">
+              <span>28-day cohort window</span>
+              <span>6-month trend</span>
+            </div>
+          </aside>
+        </div>
+
+        <div class="hero-signal">
+          <span class="signal-icon" aria-hidden="true">↗</span>
+          <p>
+            <strong>Mixed impact signal:</strong> engaged users shipped more code in the
+            observed cohort, while their aggregate time to merge was slower.
+          </p>
+        </div>
+      </header>
+
+      <main>
+        <section class="section" id="overview" aria-labelledby="overview-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow dark">CURRENT SNAPSHOT</p>
+              <h2 id="overview-title">Executive overview</h2>
+            </div>
+            <p class="freshness">Licensing &amp; adoption · 02 Sep 2026</p>
+          </div>
+
+          <div class="metric-grid">
+            <article class="metric-card">
+              <div class="metric-topline">
+                <span>Assigned seats</span>
+                <span class="metric-icon" aria-hidden="true">◎</span>
+              </div>
+              <p class="metric-value">52</p>
+              <p class="metric-caption">Copilot Business</p>
+              <div class="metric-detail">
+                <span>14%</span> of 372 active GHE users
+              </div>
+            </article>
+            <article class="metric-card">
+              <div class="metric-topline">
+                <span>28-day active adoption</span>
+                <span class="metric-icon positive" aria-hidden="true">↗</span>
+              </div>
+              <p class="metric-value">73.1<span>%</span></p>
+              <p class="metric-caption">38 of 52 assigned users</p>
+              <div class="metric-detail positive-text">
+                27 active in the last 7 days
+              </div>
+            </article>
+            <article class="metric-card risk-card">
+              <div class="metric-topline">
+                <span>Users at risk</span>
+                <span class="metric-icon warning" aria-hidden="true">!</span>
+              </div>
+              <p class="metric-value">29</p>
+              <p class="metric-caption">55.8% of assigned seats</p>
+              <div class="metric-detail warning-text">Prioritize targeted activation</div>
+            </article>
+            <article class="metric-card health-card">
+              <div class="metric-topline">
+                <span>Copilot health score</span>
+                <span class="health-badge">RED</span>
+              </div>
+              <p class="metric-value">0.53</p>
+              <p class="metric-caption">Product 0.44 · Commercial 0.70</p>
+              <div class="health-track" aria-label="Health score 0.53 out of 1">
+                <span style="width: 53%"></span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section utilization-section" aria-labelledby="utilization-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow dark">REACH &amp; UTILIZATION</p>
+              <h2 id="utilization-title">From enterprise access to weekly use</h2>
+            </div>
+            <p class="section-note">Current adoption snapshot · 02 Sep 2026</p>
+          </div>
+
+          <div class="utilization-layout">
+            <div class="funnel" role="img" aria-label="372 active GHE users, 52 Copilot assigned seats, 38 active users in 28 days, and 27 active users in 7 days">
+              <div class="funnel-row">
+                <div class="funnel-label">
+                  <strong>372</strong>
+                  <span>Active GHE users</span>
+                </div>
+                <div class="funnel-bar"><span style="width: 100%"></span></div>
+                <small>95.4% of 390 purchased</small>
+              </div>
+              <div class="funnel-row">
+                <div class="funnel-label">
+                  <strong>52</strong>
+                  <span>Copilot assigned</span>
+                </div>
+                <div class="funnel-bar"><span class="purple" style="width: 14%"></span></div>
+                <small>14.0% of active GHE users</small>
+              </div>
+              <div class="funnel-row">
+                <div class="funnel-label">
+                  <strong>38</strong>
+                  <span>Active · 28 days</span>
+                </div>
+                <div class="funnel-bar"><span class="purple" style="width: 73.1%"></span></div>
+                <small>73.1% of assigned</small>
+              </div>
+              <div class="funnel-row">
+                <div class="funnel-label">
+                  <strong>27</strong>
+                  <span>Active · 7 days</span>
+                </div>
+                <div class="funnel-bar"><span class="green" style="width: 51.9%"></span></div>
+                <small>51.9% of assigned</small>
+              </div>
+            </div>
+
+            <aside class="activation-panel">
+              <p class="panel-kicker">NEAR-TERM OPPORTUNITY</p>
+              <div class="opportunity-number">14</div>
+              <h3>assigned users are not active in the 28-day window</h3>
+              <p>
+                Focus first on activation and role-relevant workflows before expanding the
+                seat footprint beyond the current 14% reach.
+              </p>
+              <div class="license-detail">
+                <span>Enterprise capacity</span>
+                <strong>18 GHE seats remaining</strong>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section impact-section" aria-labelledby="impact-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow dark">OBSERVED COHORT ASSOCIATIONS</p>
+              <h2 id="impact-title">Impact comparison</h2>
+            </div>
+            <p class="freshness">Impact data · 03 Sep 2026</p>
+          </div>
+
+          <div class="impact-grid">
+            <article class="impact-card positive-impact">
+              <div class="impact-card-header">
+                <div>
+                  <span class="impact-status positive">POSITIVE SIGNAL</span>
+                  <h3>Code shipped</h3>
+                </div>
+                <div class="impact-multiplier">2.3<span>×</span></div>
+              </div>
+              <div class="comparison-bars" aria-label="Code shipped: engaged 53.6 versus baseline 23.6">
+                <div class="comparison-row">
+                  <span>Engaged</span>
+                  <div><i style="width: 100%"></i></div>
+                  <strong>53.6</strong>
+                </div>
+                <div class="comparison-row muted">
+                  <span>Baseline</span>
+                  <div><i style="width: 44%"></i></div>
+                  <strong>23.6</strong>
+                </div>
+              </div>
+              <p>
+                Engaged users show a 2.3× higher <strong>code shipped</strong> metric in this
+                cohort. This is an observed association—not a causal productivity claim.
+              </p>
+            </article>
+
+            <article class="impact-card negative-impact">
+              <div class="impact-card-header">
+                <div>
+                  <span class="impact-status negative">NEGATIVE SIGNAL</span>
+                  <h3>Overall time to merge</h3>
+                </div>
+                <div class="impact-multiplier negative">1.9<span>×</span></div>
+              </div>
+              <div class="comparison-bars negative-bars" aria-label="Time to merge: engaged 7.9 hours versus baseline 4.1 hours">
+                <div class="comparison-row">
+                  <span>Engaged</span>
+                  <div><i style="width: 100%"></i></div>
+                  <strong>7.9h</strong>
+                </div>
+                <div class="comparison-row muted">
+                  <span>Baseline</span>
+                  <div><i style="width: 52%"></i></div>
+                  <strong>4.1h</strong>
+                </div>
+              </div>
+              <p>
+                Engaged users were 1.9× slower to merge in aggregate. Investigate workflow
+                and cohort composition before scaling.
+              </p>
+            </article>
+          </div>
+
+          <div class="interpretation">
+            <span class="interpretation-icon" aria-hidden="true">i</span>
+            <p>
+              <strong>Read these together.</strong> Higher observed code shipped did not
+              translate into faster aggregate delivery. Phase 1’s 24.9-minute median merge
+              time suggests the overall result may be shaped by small, slower cohorts.
+            </p>
+          </div>
+        </section>
+
+        <section class="section phases-section" aria-labelledby="phases-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow dark">ADOPTION MATURITY</p>
+              <h2 id="phases-title">Where engaged users sit today</h2>
+            </div>
+            <p class="section-note">50 users represented · 28-day cohort</p>
+          </div>
+
+          <div class="phase-layout">
+            <div class="donut-wrap">
+              <div
+                class="donut"
+                role="img"
+                aria-label="Adoption phases: Phase 0 or No Cohort 48%, Phase 1 IDE 40%, Phase 2 Agentic 4%, Phase 3 Multi-agent 8%"
+              >
+                <div class="donut-center">
+                  <strong>50</strong>
+                  <span>users</span>
+                </div>
+              </div>
+              <div class="legend">
+                <span><i class="no-cohort"></i>Phase 0 <strong>48%</strong></span>
+                <span><i class="phase-one"></i>Phase 1 <strong>40%</strong></span>
+                <span><i class="phase-two"></i>Phase 2 <strong>4%</strong></span>
+                <span><i class="phase-three"></i>Phase 3 <strong>8%</strong></span>
+              </div>
+            </div>
+
+            <div class="phase-table-wrap">
+              <table class="phase-table">
+                <thead>
+                  <tr>
+                    <th>Adoption phase</th>
+                    <th>Users</th>
+                    <th>Avg LOC / day</th>
+                    <th>Avg PRs merged</th>
+                    <th>Median merge</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="phase-dot no-cohort"></span>Phase 0 / No Cohort</td>
+                    <td>24</td>
+                    <td>0.1</td>
+                    <td>21.1</td>
+                    <td>4.1h</td>
+                  </tr>
+                  <tr class="highlight-row">
+                    <td><span class="phase-dot phase-one"></span>Phase 1</td>
+                    <td>20</td>
+                    <td>45.2</td>
+                    <td>30.5</td>
+                    <td><strong>24.9m</strong></td>
+                  </tr>
+                  <tr>
+                    <td><span class="phase-dot phase-two"></span>Phase 2</td>
+                    <td>2</td>
+                    <td>1.7</td>
+                    <td>21.5</td>
+                    <td>1.9d</td>
+                  </tr>
+                  <tr>
+                    <td><span class="phase-dot phase-three"></span>Phase 3</td>
+                    <td>4</td>
+                    <td>0.9</td>
+                    <td>53.3</td>
+                    <td>7h</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="table-note">
+                Small Phase 2 and Phase 3 cohorts can materially influence aggregate results.
+              </p>
+            </div>
+          </div>
+          <div class="phase-definitions" aria-label="Adoption phase definitions">
+            <article>
+              <span class="phase-definition-number no-cohort">0</span>
+              <div>
+                <h3>No AI</h3>
+                <p>No observed Copilot cohort engagement; development follows existing workflows.</p>
+              </div>
+            </article>
+            <article>
+              <span class="phase-definition-number phase-one">1</span>
+              <div>
+                <h3>IDE</h3>
+                <p>Copilot is used in the IDE for individual assistance such as suggestions and chat.</p>
+              </div>
+            </article>
+            <article>
+              <span class="phase-definition-number phase-two">2</span>
+              <div>
+                <h3>Agentic</h3>
+                <p>Agents take on bounded development tasks with a developer directing and reviewing.</p>
+              </div>
+            </article>
+            <article>
+              <span class="phase-definition-number phase-three">3</span>
+              <div>
+                <h3>Multi-agent</h3>
+                <p>Multiple specialized agents coordinate across a broader engineering workflow.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section trend-section" aria-labelledby="trend-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow dark">SIX-MONTH TREND</p>
+              <h2 id="trend-title">Monthly pull requests</h2>
+            </div>
+            <div class="trend-callout">
+              <strong>+45.1%</strong>
+              <span>March to August</span>
+            </div>
+          </div>
+
+          <div class="trend-card">
+            <div class="chart-header">
+              <div class="legend compact">
+                <span><i class="no-cohort"></i>Phase 0</span>
+                <span><i class="phase-one"></i>Phase 1 · IDE</span>
+                <span><i class="phase-two"></i>Phase 2 · Agentic</span>
+                <span><i class="phase-three"></i>Phase 3 · Multi-agent</span>
+              </div>
+              <span class="chart-unit">TOTAL MERGED PRs</span>
+            </div>
+            <div class="chart-shell">
+              <div class="y-axis" aria-hidden="true">
+                <span>30k</span><span>20k</span><span>10k</span><span>0</span>
+              </div>
+              <div class="trend-chart" id="trend-chart" role="img" aria-label="Monthly pull requests increased from 18,690 in March to 27,122 in August, with cohort mix changing each month"></div>
+            </div>
+            <div class="correlation-note">
+              <span aria-hidden="true">↗</span>
+              PR volume increased 45.1% from March to August. This is a correlation in the
+              reporting period—not proof that Copilot caused the increase.
+            </div>
+          </div>
+        </section>
+
+        <section class="section leadership-section" aria-labelledby="leadership-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow dark">LEADERSHIP PRIORITIES</p>
+              <h2 id="leadership-title">Scale learning before scaling seats</h2>
+            </div>
+          </div>
+          <div class="actions-grid">
+            <article class="action-card">
+              <span class="action-number">01</span>
+              <h3>Activate before expanding</h3>
+              <p>
+                Re-engage the 14 assigned users not active in 28 days with role-specific
+                enablement before extending beyond 14% of active GHE users.
+              </p>
+            </article>
+            <article class="action-card">
+              <span class="action-number">02</span>
+              <h3>Address retention risk</h3>
+              <p>
+                Segment the 29 at-risk users by risk signal and assign targeted interventions;
+                categories overlap and should not be added together.
+              </p>
+            </article>
+            <article class="action-card">
+              <span class="action-number">03</span>
+              <h3>Investigate merge friction</h3>
+              <p>
+                Compare workflow, repository, and PR complexity across cohorts to explain why
+                engaged aggregate merge time is slower while Phase 1 is much faster.
+              </p>
+            </article>
+            <article class="action-card accent-action">
+              <span class="action-number">04</span>
+              <h3>Validate, then scale</h3>
+              <p>
+                Use a controlled cohort with agreed outcome measures to test whether observed
+                code shipped gains persist without worsening delivery flow.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section context-section" aria-labelledby="context-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow dark">SUPPORTING CONTEXT</p>
+              <h2 id="context-title">Health, risk &amp; platform signals</h2>
+            </div>
+          </div>
+          <div class="context-grid">
+            <article class="context-card retention-card">
+              <h3>Retention signals</h3>
+              <div class="retention-metrics">
+                <div>
+                  <span>30-day GRR</span>
+                  <strong>100%</strong>
+                </div>
+                <div>
+                  <span>180-day high-watermark retention</span>
+                  <strong>57%</strong>
+                </div>
+              </div>
+              <div class="risk-list">
+                <div><span>Copilot MAU risk</span><strong>4</strong></div>
+                <div><span>Intra-cohort 90-day usage risk</span><strong>20</strong></div>
+                <div><span>No activity in 180 days</span><strong>2</strong></div>
+                <div><span>PRU / MAU retention risk</span><strong>8</strong></div>
+              </div>
+              <p class="card-footnote">Risk categories overlap and are non-additive.</p>
+            </article>
+
+            <article class="context-card platform-card">
+              <h3>Current platform snapshot</h3>
+              <div class="platform-metric">
+                <span>Copilot AI units</span>
+                <strong>934,539</strong>
+              </div>
+              <div class="platform-row">
+                <div><span>Premium requests</span><strong>0</strong></div>
+                <div><span>Coding-agent AI units</span><strong>0</strong></div>
+              </div>
+              <p class="card-footnote">
+                Current platform values may not share the impact dashboard reporting interval.
+              </p>
+            </article>
+
+            <article class="context-card estate-card">
+              <h3>GitHub estate</h3>
+              <div class="estate-stats">
+                <div><strong>1</strong><span>Organization</span></div>
+                <div><strong>846</strong><span>Repositories</span></div>
+                <div><strong>54,392</strong><span>Actions minutes</span></div>
+                <div><strong>335</strong><span>Max committers</span></div>
+              </div>
+              <p class="card-footnote">Licensing snapshot · 02 Sep 2026</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section notes-section" aria-labelledby="notes-title">
+          <div class="notes-heading">
+            <div>
+              <p class="eyebrow">DATA GOVERNANCE</p>
+              <h2 id="notes-title">How to read this dashboard</h2>
+            </div>
+            <span class="notes-icon" aria-hidden="true">⌁</span>
+          </div>
+          <div class="notes-grid">
+            <div>
+              <strong>Freshness</strong>
+              <p>
+                Impact metrics are current to 03 Sep 2026 for 07 Aug–03 Sep. Licensing and
+                adoption metrics are current to 02 Sep 2026 unless otherwise noted.
+              </p>
+            </div>
+            <div>
+              <strong>Cohort interpretation</strong>
+              <p>
+                Results are observational and cohort sizes vary materially. Phase 2 contains
+                2 users and Phase 3 contains 4; treat their metrics as directional.
+              </p>
+            </div>
+            <div>
+              <strong>Risk categories</strong>
+              <p>
+                A user may appear in multiple risk components. Component counts are
+                non-additive and should not be reconciled to the 29-user total.
+              </p>
+            </div>
+            <div>
+              <strong>Correlation ≠ causation</strong>
+              <p>
+                Neither the code shipped association nor PR growth proves Copilot caused the
+                observed outcome. Controlled comparison is needed before attribution.
+              </p>
+            </div>
+            <div>
+              <strong>ROI assumption</strong>
+              <p>
+                Source ROI calculations use a default $130,000 salary assumption that is not
+                Hostinger-specific. Monetary ROI is therefore intentionally omitted.
+              </p>
+            </div>
+            <div>
+              <strong>Metric boundaries</strong>
+              <p>
+                Platform consumption values are a current snapshot and may not align to the
+                impact cohort window. No cross-period inference is implied.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span>HOSTINGER · GITHUB COPILOT IMPACT DASHBOARD</span>
+        <span>Executive view · September 2026</span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
