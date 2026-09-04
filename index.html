@@ -402,74 +402,73 @@
             </div>
            <p class="freshness">AI units · 07 Aug–03 Sep 2026</p>
           </div>
-          <div class="surface-overview">
-           <div>
-             <span class="surface-total-label">RECORDED AI UNITS</span>
-             <strong class="surface-total">923,671</strong>
-             <p>Hostinger enterprise · latest 28-day window</p>
-           </div>
-           <div class="surface-bar-wrap">
-             <div
-               class="surface-bar"
-               role="img"
-               aria-label="IDE 99.2%, GitHub Copilot App less than 0.1%, GitHub Copilot CLI 0%, GitHub Cloud Agent 0%, other Copilot surfaces 0.8%"
-             >
-               <span class="surface-ide" style="width: 99.2%"></span>
-               <span class="surface-other" style="width: 0.8%"></span>
-             </div>
-             <div class="surface-bar-labels">
-               <span>IDE · 99.2%</span>
-               <span>Other · 0.8%</span>
-             </div>
+          <div class="surface-toolbar">
+           <p>Select a surface to explore its recorded consumption.</p>
+           <div class="surface-toggle" role="group" aria-label="Surface usage display">
+             <button class="active" type="button" data-surface-mode="units" aria-pressed="true">
+               AI units
+             </button>
+             <button type="button" data-surface-mode="share" aria-pressed="false">
+               Share
+             </button>
            </div>
           </div>
 
-          <div class="surface-grid">
-           <article class="surface-card dominant">
-             <div class="surface-card-top">
-               <span class="surface-icon">⌘</span>
-               <strong>99.2%</strong>
+          <div class="surface-explorer">
+           <div class="surface-visual">
+             <div
+               class="surface-donut"
+               id="surface-donut"
+               role="img"
+               aria-label="Copilot AI unit distribution by surface"
+             >
+               <div class="surface-donut-center">
+                 <span id="surface-focus-label">All surfaces</span>
+                 <strong id="surface-focus-value">923,671</strong>
+                 <small id="surface-focus-unit">AI units</small>
+               </div>
              </div>
-             <h3>IDE</h3>
-             <p class="surface-units">916,523 AI units</p>
-             <p class="surface-source">VS Code Chat + JetBrains Chat</p>
-            </article>
-           <article class="surface-card">
-             <div class="surface-card-top">
-               <span class="surface-icon">◈</span>
-               <strong>&lt;0.1%</strong>
+             <div class="non-ide-breakdown">
+               <div class="non-ide-heading">
+                 <span>NON-IDE DETAIL</span>
+                 <strong>7,148 AI units</strong>
+               </div>
+               <div class="non-ide-bar" aria-label="Non-IDE usage: 99.7% Code Review and 0.3% Copilot App">
+                 <span class="review-segment" style="width: 99.7%"></span>
+                 <span class="app-segment" style="width: 0.3%"></span>
+               </div>
+               <div class="non-ide-legend">
+                 <span><i class="review-color"></i>Code Review · 99.7%</span>
+                 <span><i class="app-color"></i>App · 0.3%</span>
+               </div>
              </div>
-             <h3>GitHub Copilot App</h3>
-             <p class="surface-units">24 AI units</p>
-             <p class="surface-source">Copilot Chat integration</p>
-           </article>
-           <article class="surface-card">
-             <div class="surface-card-top">
-               <span class="surface-icon">&gt;_</span>
-               <strong>0%</strong>
+           </div>
+
+           <div class="surface-ranking">
+             <div class="surface-ranking-header">
+               <span>SURFACE</span>
+               <span>SHARE OF TOTAL</span>
              </div>
-             <h3>GitHub Copilot CLI</h3>
-             <p class="surface-units">0 AI units</p>
-             <p class="surface-source">No recorded usage in window</p>
-           </article>
-           <article class="surface-card">
-             <div class="surface-card-top">
-               <span class="surface-icon">☁</span>
-               <strong>0%</strong>
+             <div id="surface-list"></div>
+             <noscript>Enable JavaScript to use the interactive surface explorer.</noscript>
+           </div>
+
+           <aside class="surface-detail" id="surface-detail" aria-live="polite">
+             <div class="surface-detail-head">
+               <span class="surface-detail-icon" id="surface-detail-icon">⌘</span>
+               <span class="surface-detail-share" id="surface-detail-share">99.2%</span>
              </div>
-             <h3>GitHub Cloud Agent</h3>
-             <p class="surface-units">0 AI units</p>
-             <p class="surface-source">No recorded usage in window</p>
-           </article>
-           <article class="surface-card">
-             <div class="surface-card-top">
-               <span class="surface-icon">•••</span>
-               <strong>0.8%</strong>
+             <p class="surface-detail-kicker">SELECTED SURFACE</p>
+             <h3 id="surface-detail-title">IDE</h3>
+             <p class="surface-detail-value" id="surface-detail-value">916,523 AI units</p>
+             <p class="surface-detail-copy" id="surface-detail-copy">
+               Copilot consumption recorded through VS Code Chat and JetBrains Chat.
+             </p>
+             <div class="surface-detail-source">
+               <span>Recorded integrations</span>
+               <strong id="surface-detail-source">vscode-chat · jetbrains-chat</strong>
              </div>
-             <h3>Other Copilot surfaces</h3>
-             <p class="surface-units">7,124 AI units</p>
-             <p class="surface-source">Copilot pull request reviews</p>
-           </article>
+           </aside>
           </div>
 
           <div class="surface-note">
@@ -477,7 +476,8 @@
            <p>
              <strong>Consumption view, not user share.</strong> Values are additive AI units
              grouped from recorded integration identifiers. Surface labels map VS Code and
-             JetBrains to IDE, Copilot Chat to the Copilot App, and PR reviews to Other.
+             JetBrains to IDE, Copilot Chat to the Copilot App, and
+             <code>copilot-pr-reviews</code> to Copilot Code Review.
            </p>
           </div>
         </section>
