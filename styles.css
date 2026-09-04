@@ -1069,52 +1069,162 @@ h1 span {
   font-weight: 800;
 }
 
-.actions-grid {
+.surface-overview {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
+  grid-template-columns: minmax(250px, 0.65fr) minmax(0, 1.35fr);
+  gap: 44px;
+  align-items: center;
+  padding: 32px 36px;
+  border-radius: 18px;
+  color: white;
+  background:
+    radial-gradient(circle at 90% 0, rgba(166, 138, 255, 0.34), transparent 35%),
+    var(--night);
 }
 
-.action-card {
-  min-height: 245px;
-  padding: 27px;
+.surface-total-label {
+  display: block;
+  margin-bottom: 9px;
+  color: #a68aff;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.surface-total {
+  display: block;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
+.surface-overview p {
+  margin: 5px 0 0;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 10px;
+}
+
+.surface-bar {
+  display: flex;
+  height: 17px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.surface-bar span {
+  display: block;
+  height: 100%;
+}
+
+.surface-ide {
+  background: linear-gradient(90deg, #8a66f0, #a98eff);
+}
+
+.surface-other {
+  min-width: 5px;
+  background: var(--phase-three);
+}
+
+.surface-bar-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.surface-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.surface-card {
+  min-width: 0;
+  padding: 21px;
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 14px;
   background: white;
 }
 
-.action-number {
-  display: inline-block;
-  margin-bottom: 32px;
+.surface-card.dominant {
+  border-color: #cfc2f8;
+  background: #f8f5ff;
+}
+
+.surface-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.surface-icon {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 8px;
   color: var(--hostinger);
+  background: var(--hostinger-light);
   font-family: "Manrope", sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 800;
 }
 
-.action-card h3 {
-  margin-bottom: 13px;
+.surface-card-top strong {
+  color: var(--hostinger);
+  font-family: "Manrope", sans-serif;
   font-size: 17px;
 }
 
-.action-card p {
-  margin-bottom: 0;
-  color: var(--muted);
+.surface-card h3 {
+  min-height: 38px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.surface-units {
+  margin-bottom: 16px;
+  color: var(--ink);
   font-size: 11px;
-  line-height: 1.7;
+  font-weight: 700;
 }
 
-.accent-action {
-  color: white;
-  border-color: var(--hostinger);
-  background:
-    radial-gradient(circle at 100% 0, rgba(255, 255, 255, 0.17), transparent 34%),
-    var(--hostinger);
+.surface-source {
+  margin: 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.45;
 }
 
-.accent-action .action-number,
-.accent-action p {
-  color: rgba(255, 255, 255, 0.75);
+.surface-note {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-top: 14px;
+  padding: 17px 20px;
+  border: 1px solid #dcd4f4;
+  border-radius: 12px;
+  background: #f5f1ff;
+}
+
+.surface-note p {
+  margin: 0;
+  color: #5f5475;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.surface-note strong {
+  color: var(--hostinger-dark);
 }
 
 .context-grid {
@@ -1303,9 +1413,12 @@ footer {
 }
 
 @media (max-width: 1100px) {
-  .metric-grid,
-  .actions-grid {
+  .metric-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .surface-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .utilization-layout,
@@ -1381,10 +1494,14 @@ footer {
 
   .metric-grid,
   .impact-grid,
-  .actions-grid,
   .context-grid,
   .notes-grid,
   .phase-definitions {
+    grid-template-columns: 1fr;
+  }
+
+  .surface-overview,
+  .surface-grid {
     grid-template-columns: 1fr;
   }
 

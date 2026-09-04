@@ -394,46 +394,91 @@
           </div>
         </section>
 
-        <section class="section leadership-section" aria-labelledby="leadership-title">
+        <section class="section surfaces-section" aria-labelledby="surfaces-title">
           <div class="section-heading">
             <div>
-              <p class="eyebrow dark">LEADERSHIP PRIORITIES</p>
-              <h2 id="leadership-title">Scale learning before scaling seats</h2>
+             <p class="eyebrow dark">28-DAY CONSUMPTION MIX</p>
+             <h2 id="surfaces-title">Copilot usage by surface</h2>
             </div>
+           <p class="freshness">AI units · 07 Aug–03 Sep 2026</p>
           </div>
-          <div class="actions-grid">
-            <article class="action-card">
-              <span class="action-number">01</span>
-              <h3>Activate before expanding</h3>
-              <p>
-                Re-engage the 14 assigned users not active in 28 days with role-specific
-                enablement before extending beyond 14% of active GHE users.
-              </p>
+          <div class="surface-overview">
+           <div>
+             <span class="surface-total-label">RECORDED AI UNITS</span>
+             <strong class="surface-total">923,671</strong>
+             <p>Hostinger enterprise · latest 28-day window</p>
+           </div>
+           <div class="surface-bar-wrap">
+             <div
+               class="surface-bar"
+               role="img"
+               aria-label="IDE 99.2%, GitHub Copilot App less than 0.1%, GitHub Copilot CLI 0%, GitHub Cloud Agent 0%, other Copilot surfaces 0.8%"
+             >
+               <span class="surface-ide" style="width: 99.2%"></span>
+               <span class="surface-other" style="width: 0.8%"></span>
+             </div>
+             <div class="surface-bar-labels">
+               <span>IDE · 99.2%</span>
+               <span>Other · 0.8%</span>
+             </div>
+           </div>
+          </div>
+
+          <div class="surface-grid">
+           <article class="surface-card dominant">
+             <div class="surface-card-top">
+               <span class="surface-icon">⌘</span>
+               <strong>99.2%</strong>
+             </div>
+             <h3>IDE</h3>
+             <p class="surface-units">916,523 AI units</p>
+             <p class="surface-source">VS Code Chat + JetBrains Chat</p>
             </article>
-            <article class="action-card">
-              <span class="action-number">02</span>
-              <h3>Address retention risk</h3>
-              <p>
-                Segment the 29 at-risk users by risk signal and assign targeted interventions;
-                categories overlap and should not be added together.
-              </p>
-            </article>
-            <article class="action-card">
-              <span class="action-number">03</span>
-              <h3>Investigate merge friction</h3>
-              <p>
-                Compare workflow, repository, and PR complexity across cohorts to explain why
-                engaged aggregate merge time is slower while Phase 1 is much faster.
-              </p>
-            </article>
-            <article class="action-card accent-action">
-              <span class="action-number">04</span>
-              <h3>Validate, then scale</h3>
-              <p>
-                Use a controlled cohort with agreed outcome measures to test whether observed
-                code shipped gains persist without worsening delivery flow.
-              </p>
-            </article>
+           <article class="surface-card">
+             <div class="surface-card-top">
+               <span class="surface-icon">◈</span>
+               <strong>&lt;0.1%</strong>
+             </div>
+             <h3>GitHub Copilot App</h3>
+             <p class="surface-units">24 AI units</p>
+             <p class="surface-source">Copilot Chat integration</p>
+           </article>
+           <article class="surface-card">
+             <div class="surface-card-top">
+               <span class="surface-icon">&gt;_</span>
+               <strong>0%</strong>
+             </div>
+             <h3>GitHub Copilot CLI</h3>
+             <p class="surface-units">0 AI units</p>
+             <p class="surface-source">No recorded usage in window</p>
+           </article>
+           <article class="surface-card">
+             <div class="surface-card-top">
+               <span class="surface-icon">☁</span>
+               <strong>0%</strong>
+             </div>
+             <h3>GitHub Cloud Agent</h3>
+             <p class="surface-units">0 AI units</p>
+             <p class="surface-source">No recorded usage in window</p>
+           </article>
+           <article class="surface-card">
+             <div class="surface-card-top">
+               <span class="surface-icon">•••</span>
+               <strong>0.8%</strong>
+             </div>
+             <h3>Other Copilot surfaces</h3>
+             <p class="surface-units">7,124 AI units</p>
+             <p class="surface-source">Copilot pull request reviews</p>
+           </article>
+          </div>
+
+          <div class="surface-note">
+           <span class="interpretation-icon" aria-hidden="true">i</span>
+           <p>
+             <strong>Consumption view, not user share.</strong> Values are additive AI units
+             grouped from recorded integration identifiers. Surface labels map VS Code and
+             JetBrains to IDE, Copilot Chat to the Copilot App, and PR reviews to Other.
+           </p>
           </div>
         </section>
 
